@@ -1,1 +1,2 @@
-# binupanicker.github.io
+Binu Panicker
+FrontEnd Web Developer Portfolio

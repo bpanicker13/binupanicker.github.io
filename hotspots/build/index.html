@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Neighborhood Map</title>
+    <link href="'http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'"> 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD7RM_HW-fHVoKQUbf7DNK-m-TeoBZ_Cpc&libraries=places"></script>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+<body>
+    <div id="searchBox">
+        <div class="input-group add-on">
+            <input data-bind="value: neighborhood" type="text" class="form-control" placeholder="Where's your neighborhood?"  required>    
+             <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="filterBox">
+        <div class="input-group add-on">
+            <input data-bind="value: filterString" type="text" class="form-control" placeholder="Filter by Name/Category" required>
+             <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-filter"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="map-canvas"></div>
+
+    <div id="listBox">
+        <div class="list-heading">
+            <img src="img/foursquare-icon.png" alt="Foursquare Logo"><p>#HotSpots</p>
+        </div>
+        <hr>
+        <div class="list-group">
+            <ul class="list-details" data-bind="foreach: topPicksFiltered">
+                <li data-bind="click: $parent.clickVenue, css: {'selected': venue.name === $parent.selectedVenue()}">
+                    <h3><span class="list-group-item-heading" data-bind="text: venue.name, attr:{'id': venue.name}"></span></h3>
+                     <p><span class="list-group-item-category" data-bind="text: venue.categories[0].name"></span></p>
+                     <p><span class="list-group-item-address" data-bind="text: venue.location.formattedAddress"></span></p>
+                     <p><img src="img/foursquare-rating-icon.png" alt="Foursqaure Rating Logo">
+                        <strong>Rating: </strong>
+                        <span class="list-group-item-rating"     data-bind="text: venue.rating"></span></p>
+                    <hr>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/knockout/dist/knockout.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
