@@ -147,7 +147,7 @@
 				"description": "Wrote comprehensive unit tests, for an RSS Feed Reader application that uses Google's RSS API.",
 				"images": ["images/test.png"],
 				"details" : {
-					"url": "http://bpanicker13.github.io/feed/",
+					"url": "https://github.com/bpanicker13/bpanicker13.github.io/blob/master/feed-reader/index.html",
 					"image" : "images/test.png",
 					"description" : "<p>Wrote comprehensive unit tests, using the Jasmine testing framework, for an RSS Feed Reader application that uses Google's RSS API.<\/p>",
 					"technologies": ["Javascript Testing Frameworks", "Jasmine", "Javascript"]
@@ -171,7 +171,7 @@
 				"description": "Developed a full-page map that loads with 20 trending #HotSpots near me.",
 				"images": ["images/neighborhood.png"],
 				"details" : {
-					"url": "http://bpanicker13.github.io/hotspots",
+					"url": "https://github.com/bpanicker13/bpanicker13.github.io/blob/master/hotspots/src/index.html",
 					"image" : "images/neighborhood.png",
 					"description" : "<p>A single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. Users can search all included landmarks and, when selected, additional information about a landmark is presented from the Four Square and Wikipedia APIs. Used Gulp and Bower to package the application.<\/p>",
 					"technologies": ["Javascript", "HTML5", "CSS3", "Knockout.js"]
@@ -183,7 +183,7 @@
 				"description": "Optimized an inefficient web application's JavaScript.",
 				"images": ["images/optimize.png"],
 				"details" : {
-					"url": "http://bpanicker13.github.io/optimize",
+					"url": "https://github.com/bpanicker13/bpanicker13.github.io/blob/master/optimizer/index.html",
 					"image" : "images/optimize.png",
 					"description" : "<p>Optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90<\/p>",
 					"technologies": ["HTML5", "CSS3", "jQuery", "Bootstrap"]
