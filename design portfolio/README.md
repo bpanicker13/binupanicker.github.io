@@ -1,7 +1,7 @@
 Design Portfolio
 ----------------
 
-This is a Design Portfolio using the Behance API to showcase my work done as a Graphic Designer. The past 10 years I have created several brands of consumer products. 
+This is a Design Portfolio using the Behance API to showcase my work done as a Graphic Designer. The past 10 years I have created several consumer product designs as well as marketing material for print. 
 
 Instructions
 ------------

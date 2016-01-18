@@ -142,6 +142,18 @@
 	var projects = {
 		"project" : [
 			{
+				"title": "Behance Portfolio",
+				"dates": "2015",
+				"description": "A comprehensive portfolio of my work on Behance",
+				"images": ["images/behance.png"],
+				"details" : {
+					"url": "https://github.com/bpanicker13/bpanicker13.github.io",
+					"image" : "images/behance.png",
+					"description" : "<p>This is a Design Portfolio using the Behance API to showcase my work done as a Graphic Designer. The past 10 years I have created several consumer product designs as well as marketing material for print.<\/p>",
+					"technologies": ["HTML5", "CSS3", "Handlebarjs", "LESS"]
+				}
+			},
+			{
 				"title": "Feed-Reader Testing",
 				"dates": "2015",
 				"description": "Wrote comprehensive unit tests, for an RSS Feed Reader application that uses Google's RSS API.",
