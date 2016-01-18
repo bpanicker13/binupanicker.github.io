@@ -12,7 +12,7 @@
 			"linkedin" : "https://www.linkedin.com/in/binupanicker",
 			"location" : "Houston, Texas, US"
 		},
-		"welcomeMessage": "<p>Hello! My name is Binu Panicker. I have my roots in art, web development and security, I feel I can bring a unique perspective to software development. I am intent on expanding my craft, solving challenging problems and staying on the leading edge.<\/p><p>Please feel free to look over my resume and contact me with potential job openings if you like what you see. Thanks for stopping by!<\/p>",
+		"welcomeMessage": "<p>Hello! My name is Binu Panicker. I have roots in art, web development and security. I believe I can bring a unique perspective to software development. I am intent on expanding my craft, solving challenging problems and staying on the leading edge.<\/p><p>Please feel free to look over my resume and contact me with potential job openings if you like what you see. Thanks for stopping by!<\/p>",
 		"skills": ["HTML5", "CSS3", "JavaScript", "Responsive design"],
 		"biopic": "images/binu.png",
 		"display" : function() {
