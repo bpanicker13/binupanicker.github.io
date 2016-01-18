@@ -1,0 +1,559 @@
+* {
+  padding:0;
+  margin:0;
+  font-family: 'Raleway', 'Roboto', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.education-entry, .work-entry {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#projects .inner {
+  padding: 0 5%;
+}
+
+h1 {
+  font-size: 40px;
+  color: #F5A623;
+  line-height: 48px;
+  display: inline;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #999999;
+  line-height: 29px;
+  /*padding: 10px;*/
+}
+
+h3 {
+  font-style: italic;
+  font-size: 20px;
+  color: #000000;
+  line-height: 22px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4A4A4A;
+  line-height: 17px;
+}
+
+h2, h3, h4, h5 {
+  /*padding:10px;*/
+  /*padding-left: 4%;
+  padding-right: 4%;*/
+}
+
+img {
+  max-width: 100% !important;
+  height: auto;
+}
+
+.navbar {
+  margin-bottom: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.nav.container-fluid {
+  background-color: #222;
+}
+
+.navbar-inverse {
+  background-color: #222;
+  border-color: transparent;
+}
+
+.navbar-brand {
+  display: none;
+}
+
+.navbar-nav {
+  float:none;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+}
+
+.navbar-nav > li > a {
+  font-size: 1.2em;
+}
+
+.date-text {
+  font-style: italic;
+  font-size: 16px;
+  color: #999999;
+  line-height: 16px;
+  float: left;
+}
+
+.location-text {
+  font-style: italic;
+  font-size: 16px;
+  color: #999999;
+  line-height: 16px;
+  float: right;
+
+}
+
+p {
+  font-size: 14px;
+  color: #333333;
+  line-height: 21px;
+}
+
+a {
+  color: #333;
+  display: block;
+  font-weight: 700;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.welcome-message {
+  display: block;
+  font-style: italic;
+  font-size: 18px;
+  color: #F3F3F3;
+  line-height: 28px;
+}
+
+#skillsH3 {
+  color: #F5AE23;
+  display: none;
+  margin: 0;
+}
+
+.orange {
+  background-color: #F5AE23;
+}
+
+.orange-text {
+  color: #F5AE23;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.white-text {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.black {
+  background-color: #000;
+}
+
+.gray {
+  background-color: #F3F3F3;
+  padding-bottom: 10px;
+  clear:both;
+}
+
+.dark-gray {
+  background-color: #4A4A4A;
+}
+
+/* TODO: Replace with image later */
+#header {
+  background-color: #484848;
+  background: url(../images/bridge-bkg.jpg);
+  background-position: left center;
+  background-size: cover;
+}
+
+.flex-box {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.center-content {
+  padding-top: 2.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2.5%
+}
+
+ul {
+  list-style-type: none;
+}
+
+.biopic {
+  border: 6px solid #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  padding: 0;
+  max-width: 200px;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
+.biopic img {    
+  padding: 7px;            
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+img {
+  padding: 10px;
+}
+
+/* Bar chart stuff */
+.chart div {
+  font: 10px sans-serif;
+  background-color: #4A4A4A;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  height: 12px;
+  color: white;
+  display: inline-block;
+}
+
+span {
+  /*padding: 5px;*/
+}
+
+#letsConnect {
+  text-align: center;
+}
+
+/***********
+
+  Added
+
+***********/
+.container-fluid {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+hr {
+  margin: 0 !important;
+}
+
+.welcome-message p {
+  color: #fff;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  text-align: left;
+  line-height: 1.4em;
+}
+
+h1#name {
+  font-size: 3.8em;
+}
+
+h1#name + span {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 200;
+}
+
+.employer,
+.project-title {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+#topContacts,
+#footerContacts,
+#skills {
+  -webkit-justify-content: space-around;
+  justify-content:space-around;
+}
+
+#topContacts {
+  margin-bottom: 20px;
+}
+
+#topContacts a,
+#footerContacts a {
+  display: inline;
+  color: #fff;
+}
+
+#topContacts span, 
+#footerContacts span {
+  padding: 5px;
+}
+
+.project-entry {
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+.project-entry:nth-child(2n+1) {
+  background-color: #eee;
+}
+
+.project-entry p.project-description {
+  clear: both;
+  height: 3.0em;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+#project-details {
+  display: none;
+}
+
+.project-detail .inner {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.project-image {
+  height: 100%;
+  max-width: 600px;
+  width: 50%;
+}
+
+.project-desc {
+  padding: 10px;
+  width: 400px;
+}
+
+.tech-list {
+  height: 3.2em;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.tech-list .label {
+  display: inline-block;
+  margin: 0 8px 2px;
+  padding: 3px 8px;
+}
+
+.details-btn {
+  float: left;
+  margin-left: 10px;
+}
+
+.url-btn {
+  float: right;
+  margin-right: 10px;
+}
+
+#bio-details {
+  text-align: left;
+}
+
+#skills {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.location-text + a {
+  clear: both;
+}
+
+.education-entry h3 {
+  padding-left: 0;
+}
+
+#map {
+  display: block;
+  height: 320px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#mapDiv {
+  height: 420px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+.work-entry ul {
+  clear: both;
+  font-size: 1em;
+  list-style-position: outside;
+  list-style-type: disc;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.work-entry li {
+  padding: .2em 0;
+}
+
+.featherlight-close-icon {
+  line-height: 30px !important;
+}
+
+.featherlight .featherlight-content {
+  padding: 25px 25px 0;
+  border-bottom: 25px solid transparent;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 92%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #letsConnect {
+    margin-top: 5%;
+  }
+  #topContacts, #footerContacts {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  #skills {
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width:992px) {
+  .biopic {
+    width: 185px;
+  }
+  h1#name {
+    font-size: 3.2em;
+  }
+
+  .project-entry:nth-child(2n+1) {
+    background-color: #fff;
+  }
+
+  .project-entry:nth-child(4n+2) {
+    background-color: #eee;
+  }
+
+  .project-entry:nth-child(4n+3) {
+    background-color: #eee;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    float:none;
+    margin: 0;
+    display: table;
+    table-layout: fixed;
+  }
+  #letsConnect {
+    margin-top: 10%;
+  }
+  #topContacts,
+  #footerContacts {
+    display: block;
+    text-align: center;
+  }
+  #skills,
+  #skillsH3 {
+    /*display: none;*/
+  }
+  #bio-details {
+    text-align: center;
+  }
+  #bio-name {
+    text-align: center;
+  }
+  #bio-name > span {
+    display: block;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  h1#name {
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+  h1#name + span {
+    font-size: 1.2em;
+  }
+  .biopic {
+    margin: 10px auto 20px auto;
+  }
+  .welcome-message p {
+    font-size: 1.0em;
+    text-align: center;
+  }
+
+  .work-entry li,
+  .work-entry p {
+    font-size: 1.2em;
+  }
+
+  .work-entry li {
+    padding: .3em 0;
+  }
+
+  .date-text,
+  .location-text {
+    float: none;
+    font-size: 1.1em;
+    line-height: 1.4em;
+  }
+
+  .project-image {
+    height: 100%;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .project-entry:nth-child(4n+2) {
+    background-color: #fff;
+  }
+
+  .project-entry:nth-child(4n+3) {
+    background-color: #fff;
+  }
+
+  .project-entry:nth-child(2n+1) {
+    background-color: #eee;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .biopic {
+    width: 155px;
+  }
+  #topContacts.flex-box,
+  #footerContacts.flex-box {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .biopic {
+    display: block;
+  }
+}
+
