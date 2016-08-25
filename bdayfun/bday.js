@@ -31,23 +31,23 @@ function drawYear(canvas, year, conception, birth, today) {
 }
 
 function draw(birth) {
-    /* Compute important dates: conception, birth, today. */
+    /* We will compute your important dates: conception, birth, today. */
     var gestation = 276.5 * 24 * 60 * 60 * 1000;
     var conception = new Date(birth - gestation);
     var today = new Date();
 
-    /* Compute start and end years. */
+    /* Umm, lets compute start and end years. */
     var first = Math.floor(conception.getFullYear() / 5) * 5 - 5;
     var last = Math.ceil((today.getFullYear() + 1) / 5) * 5 + 4;
 
-    /* Compute age and display it. */
+    /* Here lets compute age and display it. */
     var age = today.getFullYear() - birth.getFullYear() - 1;
     if (today.getMonth() > birth.getMonth() ||
         (today.getMonth() === birth.getMonth() &&
          today.getDate() >= birth.getDate())) {
         age++;
     }
-    $('#age').text('Number of Days Living at Age ' + age);
+    $('#age').text('Living Calendar at Age ' + age);
 
     /* Insert a canvas for each year. */
     var life = $('#life').empty();
