@@ -7,7 +7,7 @@ function drawYear(canvas, year, conception, birth, today) {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.fillStyle = 'white';
-    ctx.font = header + 'px "Lucida Console", Monaco, monospace';
+    ctx.font = header + 'px "Palatino Linotype", "Book Antiqua", Palatino, serif';
     ctx.textBaseline = 'top';
     ctx.fillText(year, 0, 0);
 
