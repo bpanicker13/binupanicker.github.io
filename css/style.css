@@ -215,8 +215,8 @@ ul {
   margin-top: -10px;
 }
 
-.biopic img {    
-  padding: 7px;            
+.biopic img {
+  padding: 7px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -302,7 +302,7 @@ h1#name + span {
   color: #fff;
 }
 
-#topContacts span, 
+#topContacts span,
 #footerContacts span {
   padding: 5px;
 }
@@ -495,7 +495,7 @@ h1#name + span {
     margin-bottom: 0;
   }
   h1#name + span {
-    font-size: 1.2em;
+    font-size: 2.2em;
   }
   .biopic {
     margin: 10px auto 20px auto;
@@ -526,7 +526,7 @@ h1#name + span {
     max-width: 600px;
     width: 100%;
   }
-  
+
   .project-entry:nth-child(4n+2) {
     background-color: #fff;
   }
@@ -556,4 +556,3 @@ h1#name + span {
     display: block;
   }
 }
-

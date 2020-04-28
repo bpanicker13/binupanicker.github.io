@@ -1,5 +1,5 @@
 (function($) {
-	
+
 	// Bio JSON object
 	var bio = {
 		"name" : "Binu Panicker",
@@ -7,7 +7,7 @@
 		"contacts" : {
 			"mobile" : "832-766-6969",
 			"email" : "bpanicker13@gmail.com",
-			"github" : "http://bpanicker13.github.io",
+			"github" : "https://bpanicker13.github.io",
 			"twitter" : "https://twitter.com/bpanicker13",
 			"linkedin" : "https://www.linkedin.com/in/binupanicker",
 			"location" : "Houston, Texas, US"
@@ -18,7 +18,7 @@
 		"display" : function() {
 			// Display name, role, picture and welcome message
 			$('#bio-name').append(HTMLheaderName.replace('%data%', bio.name));
-			$('#bio-name').append(HTMLheaderRole.replace('%data%', bio.role));
+			$('#bio-name2').append(HTMLheaderRole.replace('%data%', bio.role));
 			$('#bio-details').append(HTMLbioPic.replace('%data%', bio.biopic));
 			$('#bio-details').append(HTMLwelcomeMsg.replace('%data%', bio.welcomeMessage));
 
@@ -47,10 +47,18 @@
 			{
 				"name" : "Houston Baptist University",
 				"location" : "Houston, TX",
-				"degree" : "Bachelor's of Science",
-				"majors" : "Business Administration",
+				"degree" : "Bachelors of Science",
+				"majors" : "Business Administration, Molecular Biology",
 				"dates" : 2004,
-				"url" : "www.hbu.edu"
+				"url" : "https://hbu.edu"
+			},
+			{
+				"name" : "Albert-Szent Gyorgi Medical University",
+				"location" : "Szeged, Hungary",
+				"degree" : "Bachelors of Medicine and Bachelors of Surgery",
+				"majors" : "Medicine",
+				"dates" : 2000,
+				"url" : ""
 			}
 		],
 		"onlineCourses" : [
@@ -58,7 +66,13 @@
 				"title": "Front-end Web Development Nanodegree",
 				"school": "Udacity",
 				"date": 2015,
-				"url" : "https://www.udacity.com/course/nd001"
+				"url" : "https://www.udacity.com"
+			},
+			{
+				"title": "Information System Security",
+				"school": "Keller School of Management",
+				"date": 2015,
+				"url" : "https://www.devry.com"
 			}
 		],
 		"display" : function() {
@@ -84,7 +98,7 @@
 			for (course in education.onlineCourses) {
 				$('.education-entry:last').append(HTMLonlineClasses);
 				var onlineTitle = HTMLonlineTitle.replace('%data%', education.onlineCourses[course].title );
-				
+
 				// Added URL into the title link rather than as a separate link
 				onlineTitle = onlineTitle.replace('%url%', education.onlineCourses[course].url);
 				var onlineSchool = HTMLonlineSchool.replace('%data%', education.onlineCourses[course].school);
@@ -99,14 +113,14 @@
 	var work = {
 		"jobs": [
 			{
-				"employer": "Discount Grocers",
-				"title": "DBA/Network Security",
-				"location": "Stafford, TX",
-				"dates": "2010 - 2014",
+				"employer": "Thelan",
+				"title": "Technologist",
+				"location": "Washington, DC",
+				"dates": "2016 - 2020",
 				"description": "<ul><li>Managed SQL Server 2008 R2 database, development, design, maintenance and production support of retail and wholesale databases, business applications, new server setup, MySQL Server installation, upgrade, migration.<\/li><li>Performed security and logged reviews for systems.</li><li>Provide assistance with security audits, risk assessments. Provide technical input into recommendations for enhancing data systems security. Utilize security systems to resolve security related issues and ensure effective and appropriate security measures are in place.<\/li><\/ul><h4>Technologies used:<\/h4><p class='orange-text bold'>MSSQL Server, IDS, SNORT, SIEM<\/p>"
 			},
 			{
-				"employer" : "Advanced Innovative Stone",
+				"employer" : "Various",
 				"title" : "Network Engineer",
 				"location" : "Missouri City, TX",
 				"dates" : "September 2013 - December 2014",
@@ -229,7 +243,7 @@
 				$('.project-entry:last').append(projectDesc);
 
 				$('.project-entry:last').append(HTMLprojectImagesStart);
-				
+
 				// Loop through array of images
 				if (projects.project[project].images.length > 0) {
 					for (image in projects.project[project].images) {
@@ -262,7 +276,7 @@
 				// is displayed within a lightbox when the project title, image or view details button
 				// are clicked
 				$('#project-details').append(HTMLprojectDetailStart.replace('%id', 'detail-' + project));
-				
+
 				// Get the image that will be displayed on the details page
 				var detailImage = HTMLprojectDetailImage.replace('%data%', projects.project[project].details.image);
 				detailImage = detailImage.replace('%name%', projects.project[project].title);
@@ -297,25 +311,25 @@
 	// makeLink - Used to take a web address and convert it into a clickable link
 	// with optional display text
 	function makeLink(address, text, strip_protocol, new_window) {
-		
+
 		if (!address) {
 			return;
 		}
 
 		var regex_prot = /^(.*?):\/\/(www.)?/,
 				link = '';
-		
+
 		if(text && strip_protocol === true) {
 			text = text.replace(regex_prot, '');
 		}
 		else {
 			text = address.replace(regex_prot, '');
 		}
-		
+
 		// Build the link. If no text was specified, then use the address as the link text
-		link = '<a href="' + address + ((new_window === true) ? '" target="_blank">' : '">') + 
+		link = '<a href="' + address + ((new_window === true) ? '" target="_blank">' : '">') +
 						((text !== undefined) ? text : address) + '</a>';
-		
+
 		return link;
 	}
 
@@ -468,7 +482,7 @@
 	// Vanilla JS way to listen for resizing of the window
 	// and adjust map bounds
 	window.addEventListener('resize', function(e) {
-	  
+
 	  //Make sure the map bounds get updated on page resize
 	  map.fitBounds(mapBounds);
 	});
@@ -482,4 +496,3 @@
 
 
 })(jQuery);
-
